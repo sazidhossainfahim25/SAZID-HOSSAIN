@@ -111,13 +111,10 @@ const fadeUp = {
 
 const SkillsPage = () => {
   return (
-    <section id="skills" className="relative py-14 overflow-hidden">
+    <section id="skills" className="relative py-24 overflow-hidden ">
       {/* Background Blur */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-[120px] rounded-full"></div>
 
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/10 blur-[120px] rounded-full"></div>
-
-      <div className="relative container mx-auto px-4 max-w-6xl">
+      <div className="relative ">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: -40 }}
@@ -153,10 +150,8 @@ const SkillsPage = () => {
               {/* Category Title */}
               <motion.h3
                 variants={fadeUp}
-                className="text-xl font-bold mb-8 flex items-center gap-3 text-blue-600 dark:text-blue-400 uppercase tracking-wider"
+                className="text-xl font-bold mb-8 flex items-center gap-3 text-blue-600 dark:text-white uppercase tracking-wider"
               >
-                <span className="w-8 h-[3px] bg-blue-500 rounded-full"></span>
-
                 {cat.title}
               </motion.h3>
 

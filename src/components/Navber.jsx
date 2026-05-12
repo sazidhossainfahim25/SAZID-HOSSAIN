@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="glass-navbar">
+      <nav className="glass-navbar bg-gray-600/10">
         <div className="flex justify-between items-center p-4 px-6">
           <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
             SH

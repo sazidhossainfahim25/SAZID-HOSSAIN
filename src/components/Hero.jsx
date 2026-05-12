@@ -37,7 +37,7 @@ const Hero = () => {
           whileInView="visible"
           viewport={{ once: true }}
           variants={staggerContainer}
-          className="relative grid lg:grid-cols-3 grid-cols-1 gap-6 items-center border border-black/10 dark:border-white/10 rounded-[35px] p-4 dark:bg-white/5 shadow-xl"
+          className="relative grid lg:grid-cols-3 grid-cols-1 gap-6 items-center rounded-[35px] p-8 dark:bg-white/1 shadow-xl"
         >
           {/* LEFT SIDE CONTENT */}
           <div className="relative z-10 col-span-2 p-4">
@@ -58,7 +58,7 @@ const Hero = () => {
               className="text-2xl sm:text-3xl lg:text-4xl font-black leading-tight mb-2"
             >
               Hi, I'm <br />
-              <span className="bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-900 to-blue-700 to-indigo-500 bg-clip-text text-transparent">
                 <Typewriter
                   words={['SAZID HOSSAIN', 'A NEXT.JS EXPERT', 'FONTEND DEVELOPER']}
                   loop={true}
@@ -121,11 +121,10 @@ const Hero = () => {
 
           {/* RIGHT SIDE (Profile Card) */}
           <motion.div variants={fadeInUp} className="relative mx-auto w-full max-w-sm">
-            <div className="absolute inset-0  rounded-full"></div>
 
             <motion.div
               whileHover={{ y: -10 }}
-              className="relative text-center rounded-[35px]  bg-white/20 dark:bg-[#0f172a]/20   p-4 "
+              className="relative text-center rounded-[35px]  bg-white/5 dark:bg-[#0f172a]/5  p-4 "
             >
               <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden border-[6px] border-blue-100 dark:border-white/10 mx-auto shadow-2xl mb-6">
                 <Image src="/man-2.png" fill alt="Sazid" priority className="object-cover" />
@@ -147,7 +146,7 @@ const Hero = () => {
                   <Link key={i} href={social.href} target="_blank">
                     <motion.div
                       whileHover={{ scale: 1 }}
-                      className="w-11 h-11 rounded-xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-600 hover:text-white transition-all cursor-pointer"
+                      className="w-11 h-11 rounded-xl flex items-center justify-center bg-blue-800 dark:bg-white/10 hover:bg-blue-600 text-white  hover:text-white transition-all cursor-pointer"
                     >
                       {social.icon}
                     </motion.div>

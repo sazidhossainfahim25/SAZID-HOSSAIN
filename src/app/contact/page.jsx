@@ -64,11 +64,11 @@ const fadeUp = {
 
 const ContactPage = () => {
   return (
-    <section id="contact" className="relative py-24 overflow-hidden">
+    <section id="contact" className="relative py-24 overflow-hidden rounded-2xl mb-4">
       {/* Background Glow */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-[120px] rounded-full"></div>
+      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/5 blur-[120px] rounded-full"></div>
 
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/10 blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/5 blur-[120px] rounded-full"></div>
 
       <div className="container relative z-10 mx-auto px-4 max-w-7xl">
         {/* Heading */}
@@ -122,7 +122,7 @@ const ContactPage = () => {
                 <div className="relative flex items-center gap-5">
                   {/* Icon */}
                   <div
-                    className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${item.color} flex items-center justify-center text-white text-2xl shadow-lg`}
+                    className={` p-3 rounded-2xl bg-blue-900/90 flex items-center justify-center text-white text-2xl shadow-lg`}
                   >
                     {item.icon}
                   </div>

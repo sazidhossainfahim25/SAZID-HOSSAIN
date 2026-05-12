@@ -47,20 +47,20 @@ const fadeUp = {
 
 const EducationExperience = () => {
   return (
-    <section id="education" className="relative py-20 overflow-hidden">
+    <section id="education" className="relative py-20 overflow-hidden rounded-2xl">
       {/* Background Glow */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-[120px] rounded-full"></div>
+      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/5 blur-[120px] rounded-full"></div>
 
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/10 blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/5 blur-[120px] rounded-full"></div>
 
-      <div className="relative container mx-auto px-4 max-w-6xl">
+      <div className="relative  p-4">
         {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
           <h2 className="text-4xl lg:text-5xl font-black mb-4">
             Education & <span className="text-blue-500">Experience</span>

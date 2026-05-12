@@ -18,28 +18,7 @@ const projects = [
       'A premium full-stack e-commerce solution with payment integration and real-time inventory management.',
     liveLink: 'https://example.com',
     githubLink: 'https://github.com/yourusername/project',
-  },
-
-  {
-    id: '2',
-    name: 'Real Estate App',
-    image: '/man1.png',
-    tags: ['React', 'Firebase', 'Tailwind'],
-    description:
-      'Modern property listing platform with smart filtering, map integration and advanced search.',
-    liveLink: 'https://example.com',
-    githubLink: 'https://github.com/yourusername/project',
-  },
-
-  {
-    id: '3',
-    name: 'Analytics Dashboard',
-    image: '/man1.png',
-    tags: ['React', 'Chart.js', 'Node.js'],
-    description: 'Advanced analytics dashboard for tracking social media performance and insights.',
-    liveLink: 'https://example.com',
-    githubLink: 'https://github.com/yourusername/project',
-  },
+  }
 ];
 
 const cardVariants = {
@@ -56,11 +35,11 @@ const cardVariants = {
 
 const ProjectsPage = () => {
   return (
-    <section id="projects" className="relative py-24 overflow-hidden">
+    <section id="projects" className="relative py-24 overflow-hidden rounded-2xl">
       {/* Background Blur */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-[120px] rounded-full"></div>
+      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/5 blur-[120px] rounded-full"></div>
 
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/10 blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/5 blur-[120px] rounded-full"></div>
 
       <div className="container relative z-10  px-4">
         {/* Heading */}

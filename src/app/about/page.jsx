@@ -12,13 +12,13 @@ import { IoMailOutline } from 'react-icons/io5';
 
 const AboutPage = () => {
   return (
-    <section id="about" className="py-10 overflow-hidden">
+    <section id="about" className="py-10 lg:mt-16 mt-4 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="relative overflow-hidden border border-black/10 dark:border-white/10 rounded-[35px] p-5 lg:p-4 bg-white/10 dark:bg-white/5 shadow-xl"
+        className="relative overflow-hidden rounded-[35px] p-5 lg:p-4 bg-white/1 dark:bg-white/1 shadow-xl"
       >
         {/* Background Blur */}
         <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-[120px] rounded-full"></div>
@@ -30,13 +30,13 @@ const AboutPage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
-          className="relative text-center mb-14"
+          className="relative text-center mb-8"
         >
           <h2 className="text-4xl lg:text-5xl font-black mb-4">
             About <span className="text-blue-500">Me</span>
           </h2>
 
-          <div className="w-24 h-1.5 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto rounded-full"></div>
+          <div className="w-40 h-1.5 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="relative grid lg:grid-cols-2 gap-10 items-center">
@@ -48,9 +48,9 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="mx-auto w-full max-w-md"
           >
-            <div className="relative overflow-hidden rounded-[35px] border border-white/10 bg-white/70 dark:bg-[#0f172a]/80 backdrop-blur-2xl p-8 text-center shadow-2xl">
+            <div className="relative overflow-hidden rounded-[35px] border border-white/10 bg-white/10 dark:bg-[#0f172a]/10 backdrop-blur-2xl p-8 text-center shadow-2xl">
               {/* Glow */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-blue-500/20 blur-3xl rounded-full"></div>
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-blue-500/10 blur-3xl rounded-full"></div>
 
               {/* Image */}
               <motion.div
@@ -84,7 +84,7 @@ const AboutPage = () => {
                   <Link
                     href="https://linkedin.com"
                     target="_blank"
-                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-500 hover:text-white transition-all duration-300"
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/20 hover:opacity-100 transition-all duration-500 hover:text-white  "
                   >
                     <FaLinkedinIn className="text-xl" />
                   </Link>

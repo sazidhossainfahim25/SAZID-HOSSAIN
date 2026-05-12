@@ -34,7 +34,6 @@ body {
     max-width: 80rem;
     border-radius: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(24px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
     @apply md:w-[90%] transition-all duration-300;
