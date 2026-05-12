@@ -1,8 +1,10 @@
 
 import ProjectsPage from "./projects/page";
 import AboutPage from "./about/page";
-import Hero from "@/components/Hero";
 import ContactPage from "./contact/page";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import SkillsPage from "./skills/page";
 
 
 export default function Home() {
@@ -10,8 +12,10 @@ export default function Home() {
     <>
       <Hero />
       <AboutPage />
+      <SkillsPage/>
       <ProjectsPage />
-      <ContactPage/>
+      <ContactPage />
+      <Footer />
     </>
   );
 }

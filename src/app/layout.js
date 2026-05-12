@@ -25,10 +25,10 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-        <body>
+      <body>
         <Providers>
           <Navbar />
-          {children}
+          <main className="max-w-7xl mx-auto p-4">{children}</main>
         </Providers>
       </body>
     </html>

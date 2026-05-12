@@ -1,6 +1,6 @@
-'use client';
+"use client"
 
-import { ThemeProvider as NextThemesProvider } from 'next-themes';
+import { ThemeProvider as NextThemesProvider } from "next-themes"
 
 export function Providers({ children }) {
   return (
@@ -8,9 +8,8 @@ export function Providers({ children }) {
       attribute="class"
       defaultTheme="system"
       enableSystem
-      disableTransitionOnChange
     >
       {children}
     </NextThemesProvider>
-  );
-}
+  )
+};

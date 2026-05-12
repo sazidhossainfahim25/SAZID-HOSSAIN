@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
   --color-brand-blue: #3b82f6;
   --color-brand-teal: #2dd4bf;
@@ -38,6 +38,11 @@ body {
     backdrop-filter: blur(24px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
     @apply md:w-[90%] transition-all duration-300;
+  }
+  @layer components{
+    .pera-text{
+    @apply text-2xl font-semibold 
+    }
   }
 
   .dark .glass-navbar {

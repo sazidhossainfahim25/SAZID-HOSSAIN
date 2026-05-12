@@ -1,109 +1,92 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+
+const projects = [
+  {
+    id: '1',
+    name: 'E-Commerce Platform',
+    image: '/project1.png', // Replace with your project screenshot
+    tags: ['Next.js', 'Tailwind', 'MongoDB'],
+    description: 'A full-stack e-commerce solution with payment integration.',
+  },
+  {
+    id: '2',
+    name: 'Real Estate App',
+    image: '/project2.png',
+    tags: ['React', 'Firebase', 'Tailwind'],
+    description: 'Property listing platform with real-time search and filtering.',
+  },
+  {
+    id: '3',
+    name: 'Social Media Dashboard',
+    image: '/project3.png',
+    tags: ['React', 'Chart.js', 'Node.js'],
+    description: 'Advanced analytics dashboard for social media tracking.',
+  },
+];
 
 const ProjectsPage = () => {
-  // প্রজেক্টের ডাটা (আপনি এখানে আপনার প্রজেক্টের তথ্য বসাবেন)
-  const projects = [
-    {
-      id: 1,
-      title: 'E-Commerce Platform',
-      description:
-        'A full-stack e-commerce solution with payment gateway integration and admin dashboard.',
-      tags: ['Next.js', 'MongoDB', 'Stripe', 'Tailwind'],
-      github: '#',
-      demo: '#',
-      image:
-        'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop',
-    },
-    {
-      id: 2,
-      title: 'AI Chat Application',
-      description: 'Real-time chat application featuring AI response generation using OpenAI API.',
-      tags: ['React', 'Node.js', 'Socket.io', 'OpenAI'],
-      github: '#',
-      demo: '#',
-      image:
-        'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?q=80&w=1000&auto=format&fit=crop',
-    },
-    {
-      id: 3,
-      title: 'Portfolio Website',
-      description: 'A clean and minimal portfolio template designed for creative developers.',
-      tags: ['Next.js', 'Framer Motion', 'Tailwind'],
-      github: '#',
-      demo: '#',
-      image:
-        'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000&auto=format&fit=crop',
-    },
-  ];
-
   return (
-    <main className="min-h-screen pt-32 pb-20 px-6">
-      <div className="max-w-6xl mx-auto">
-        {/* হেডার সেকশন */}
-        <div className="mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            My <span className="text-brand-blue">Projects</span>
-          </h1>
-          <p className="opacity-70 max-w-2xl text-lg">
-            I love building things. Here are some of my favorite projects I've worked on recently.
-          </p>
+    <section id="projects" className="py-24 bg-[#05051a] text-white">
+      <div className="container mx-auto px-4">
+        {/* Section Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+          <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
         </div>
 
-        {/* প্রজেক্ট গ্রিড */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Project Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group rounded-3xl overflow-hidden bg-foreground/5 border border-foreground/10 hover:border-brand-blue/50 transition-all duration-300"
+              className="group bg-[#0a0a2e] border border-blue-900/30 rounded-3xl overflow-hidden hover:border-blue-500 transition-all duration-500 shadow-xl"
             >
-              {/* প্রজেক্ট ইমেজ */}
-              <div className="relative h-52 overflow-hidden">
-                <img
+              {/* Project Image Area */}
+              <div className="relative h-64 overflow-hidden">
+                <Image
                   src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  fill
+                  alt={project.name}
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <a
-                    href={project.github}
-                    className="p-3 bg-white text-black rounded-full hover:scale-110 transition-transform"
-                  >
-                    <FaGithub size={20} />
-                  </a>
-                  <a
-                    href={project.demo}
-                    className="p-3 bg-white text-black rounded-full hover:scale-110 transition-transform"
-                  >
-                    <FaExternalLinkAlt size={18} />
-                  </a>
-                </div>
+                <div className="absolute inset-0 bg-blue-600/20 group-hover:bg-transparent transition-colors"></div>
               </div>
 
-              {/* কন্টেন্ট */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 group-hover:text-brand-blue transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-sm opacity-70 mb-4 line-clamp-2">{project.description}</p>
-
-                {/* ট্যাগস */}
-                <div className="flex flex-wrap gap-2 mt-auto">
+              {/* Project Content */}
+              <div className="p-8">
+                <div className="flex gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full bg-brand-blue/10 text-brand-blue border border-brand-blue/20"
+                      className="text-[10px] bg-blue-900/50 text-blue-400 px-3 py-1 rounded-full border border-blue-800/50 uppercase font-bold"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
+
+                <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors">
+                  {project.name}
+                </h3>
+
+                <p className="text-gray-400 text-sm mb-6 line-clamp-2">{project.description}</p>
+
+                {/* Requirements: View More Button */}
+                <Link
+                  href={`/projects/${project.id}`}
+                  className="inline-flex items-center justify-center w-full py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all"
+                >
+                  View Details
+                </Link>
               </div>
             </div>
           ))}
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
