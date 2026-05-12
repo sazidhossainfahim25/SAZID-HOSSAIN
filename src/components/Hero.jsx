@@ -2,76 +2,161 @@
 
 import Image from 'next/image';
 import React from 'react';
+import Link from 'next/link';
+import { motion } from 'framer-motion'; // ফ্রেমার মোশন ইমপোর্ট
+import { Typewriter } from 'react-simple-typewriter';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { GoDotFill } from 'react-icons/go';
 import { IoMailOutline } from 'react-icons/io5';
+import { FiDownload } from 'react-icons/fi';
+import { HiArrowRight } from 'react-icons/hi';
 
 const Hero = () => {
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
+  const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
   return (
-    <section className="bg-(--background) text-(--foreground) pt-20 pb-5">
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-2 items-center  border-black/10 dark:border-amber-100/10 rounded-2xl  border p-4  relative">
-        {/* LEFT SIDE */}
-        <div className="relative z-10 col-span-2">
-          {/* Badge */}
-          <div className="flex items-center gap-2 mb-8 bg-white dark:bg-blue-900 text-blue-800 dark:text-white px-5 py-2 rounded-full w-fit shadow-md">
-            <GoDotFill className="text-green-500 animate-pulse" />
-            <span className="text-sm font-medium">Available for new opportunities</span>
-          </div>
+    <section className=" pt-24 ">
+      <div>
 
-          {/* Heading */}
-          <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-            I'm{' '}
-            <span className="bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text text-transparent">
-              SAZID HOSSAIN
-            </span>
-          </h1>
-
-          {/* Description */}
-          <p className="text-lg leading-relaxed opacity-80 max-w-xl mb-10">
-            Hi, I’m Sazid Hossain. I craft premium frontend experiences with modern UI, smooth
-            animations, and high-performance web technologies.
-          </p>
-
-          {/* Buttons */}
-          <div className="flex flex-wrap gap-5">
-            <button className="px-7 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105">
-              Hire Me
-            </button>
-
-            <button className="px-7 py-3 rounded-xl border border-blue-600 text-blue-600 dark:text-white hover:bg-blue-600 hover:text-white transition-all duration-300">
-              Download CV
-            </button>
-          </div>
-        </div>
-
-        {/* RIGHT SIDE IMAGE AREA */}
-        <div className=" mx-auto col-span-1 p-2">
-          <div className=" w-100  text-center rounded-2xl bg-white/70  dark:bg-blue-950 text-black dark:text-white space-y-5 p-2">
-            <div className="w-[150px] h-[150px] rounded-full overflow-hidden border-2 dark:border-gray-500 border-blue-100 mx-auto  ">
-              <Image
-                src="/man-2.png"
-                height={100}
-                width={100}
-                alt="heroimg"
-                priority
-                className="w-full h-full object-cover text-center "
-              />
-            </div>
-            <h2 className="text-2xl font-bold">SAZID HOSSAIN</h2>
-            <h2 className="text-[18px] text-blue-500 dark:text-blue-500">
-              Full Stack Developer <br /> (Frontend Focused)
-            </h2>
-            <p className="text-gray-400">sazidhossain25@gmail.con</p>
-            <div>
-              <span className="flex items-center justify-center gap-3">
-                <FaLinkedinIn className="w-11 h-11 text-black dark:text-amber-50  bg-blue-100 dark:bg-gray-800 p-3 rounded-2xl" />
-                <AiFillGithub className="w-11 h-11 text-black dark:text-amber-50  bg-blue-100 dark:bg-gray-800 p-3 rounded-2xl" />
-                <IoMailOutline className="w-11 h-11 text-black dark:text-amber-50  bg-blue-100 dark:bg-gray-800 p-3 rounded-2xl" />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+          className="relative grid lg:grid-cols-3 grid-cols-1 gap-6 items-center border border-black/10 dark:border-white/10 rounded-[35px] p-4 dark:bg-white/5 shadow-xl"
+        >
+          {/* LEFT SIDE CONTENT */}
+          <div className="relative z-10 col-span-2 p-4">
+            {/* Badge */}
+            <motion.div
+              variants={fadeInUp}
+              className="flex items-center gap-2 mb-8 bg-white/80 dark:bg-white/10 backdrop-blur-md text-blue-700 dark:text-blue-300 px-5 py-2 rounded-full w-fit border border-blue-200/50 dark:border-white/10 shadow-lg"
+            >
+              <GoDotFill className="text-green-500 animate-pulse" />
+              <span className="text-sm font-medium tracking-wide">
+                Available for new opportunities
               </span>
-            </div>
+            </motion.div>
+
+            {/* Typing Heading */}
+            <motion.h1
+              variants={fadeInUp}
+              className="text-2xl sm:text-3xl lg:text-4xl font-black leading-tight mb-2"
+            >
+              Hi, I'm <br />
+              <span className="bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 bg-clip-text text-transparent">
+                <Typewriter
+                  words={['SAZID HOSSAIN', 'A NEXT.JS EXPERT', 'FONTEND DEVELOPER']}
+                  loop={true}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1500}
+                />
+              </span>
+            </motion.h1>
+
+            {/* Description */}
+            <motion.p
+              variants={fadeInUp}
+              className="text-[16px] lg:text-[18px] leading-relaxed text-gray-600 dark:text-gray-300 max-w-2xl mb-2"
+            >
+              I build premium modern web experiences with smooth animations, clean UI design, and
+              high-performance frontend development.
+            </motion.p>
+
+            {/* Buttons */}
+            <motion.div variants={fadeInUp} className="flex flex-wrap gap-5 mb-10">
+              <Link href="#contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group px-8 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold shadow-xl flex items-center gap-2"
+                >
+                  Hire Me
+                  <HiArrowRight className="group-hover:translate-x-1 transition-all" />
+                </motion.button>
+              </Link>
+
+              <Link href="/resume.pdf" target="_blank">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-3 rounded-2xl border border-blue-500/40 bg-white/50 dark:bg-white/5 backdrop-blur-md text-blue-600 dark:text-white hover:bg-blue-600 hover:text-white transition-all flex items-center gap-2"
+                >
+                  <FiDownload /> Download CV
+                </motion.button>
+              </Link>
+            </motion.div>
+
+            {/* Stats */}
+            <motion.div variants={fadeInUp} className="flex flex-wrap gap-3">
+              {[
+                { label: 'Years Experience', value: '1+' },
+                { label: 'Projects Completed', value: '10+' },
+                { label: 'Client Satisfaction', value: '100%' },
+              ].map((stat, i) => (
+                <div key={i}>
+                  <h2 className="text-3xl font-bold text-blue-500">{stat.value}</h2>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm">{stat.label}</p>
+                </div>
+              ))}
+            </motion.div>
           </div>
-        </div>
+
+          {/* RIGHT SIDE (Profile Card) */}
+          <motion.div variants={fadeInUp} className="relative mx-auto w-full max-w-sm">
+            <div className="absolute inset-0  rounded-full"></div>
+
+            <motion.div
+              whileHover={{ y: -10 }}
+              className="relative text-center rounded-[35px]  bg-white/20 dark:bg-[#0f172a]/20   p-4 "
+            >
+              <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden border-[6px] border-blue-100 dark:border-white/10 mx-auto shadow-2xl mb-6">
+                <Image src="/man-2.png" fill alt="Sazid" priority className="object-cover" />
+              </div>
+
+              <div className="space-y-2">
+                <h2 className="text-2xl font-bold uppercase tracking-tight">Sazid Hossain</h2>
+                <p className="text-blue-500 font-medium">Full Stack Developer</p>
+                <p className="text-gray-500 dark:text-gray-400 text-xs">sazidhossain25@gmail.com</p>
+              </div>
+
+              {/* Social Icons */}
+              <div className="flex items-center justify-center gap-4 mt-8">
+                {[
+                  { icon: <FaLinkedinIn />, href: 'https://linkedin.com' },
+                  { icon: <AiFillGithub />, href: 'https://github.com' },
+                  { icon: <IoMailOutline />, href: 'mailto:sazidhossain25@gmail.com' },
+                ].map((social, i) => (
+                  <Link key={i} href={social.href} target="_blank">
+                    <motion.div
+                      whileHover={{ scale: 1 }}
+                      className="w-11 h-11 rounded-xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-600 hover:text-white transition-all cursor-pointer"
+                    >
+                      {social.icon}
+                    </motion.div>
+                  </Link>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,5 +1,10 @@
+'use client';
+
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+
+import { motion } from 'framer-motion';
 
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -7,89 +12,142 @@ import { IoMailOutline } from 'react-icons/io5';
 
 const AboutPage = () => {
   return (
-    <section id="about" className=" py-4">
-      <div className=" shadow shadow-black/20 dark:shadow-white/20 rounded-2xl p-4">
-        {/* Section Heading */}
-        <div className="text-center mb-8">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">About Me</h2>
-          <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
-        </div>
+    <section id="about" className="py-10 overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="relative overflow-hidden border border-black/10 dark:border-white/10 rounded-[35px] p-5 lg:p-4 bg-white/10 dark:bg-white/5 shadow-xl"
+      >
+        {/* Background Blur */}
+        <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-[120px] rounded-full"></div>
+        <div className="absolute bottom-0 right-0 w-72 h-72 bg-cyan-400/10 blur-[120px] rounded-full"></div>
 
-        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-4 gap-2 items-center p-3 ">
-          {/* Left Side: Illustration or Decorative Image */}
-                  <div className=" mx-auto col-span-1 p-2">
-                    <div className=" px-15 py-8  text-center rounded-2xl bg-white/70  dark:bg-blue-950 text-black dark:text-white space-y-5 ">
-                      <div className="w-[150px] h-[150px] rounded-full overflow-hidden border-2 dark:border-gray-500 border-blue-100 mx-auto  ">
-                        <Image
-                          src="/man-2.png"
-                          height={100}
-                          width={100}
-                          alt="heroimg"
-                          priority
-                          className="w-full h-full object-cover text-center "
-                        />
-                      </div>
-                      <h2 className="text-2xl font-bold">SAZID HOSSAIN</h2>
-                      <h2 className="text-[18px] text-blue-500 dark:text-blue-500">
-                        Full Stack Developer <br /> (Frontend Focused)
-                      </h2>
-                      <p className="text-gray-400">sazidhossain25@gmail.con</p>
-                      <div>
-                        <span className="flex items-center justify-center gap-3">
-                          <FaLinkedinIn className="w-11 h-11 text-black dark:text-amber-50  bg-blue-100 dark:bg-gray-800 p-3 rounded-2xl" />
-                          <AiFillGithub className="w-11 h-11 text-black dark:text-amber-50  bg-blue-100 dark:bg-gray-800 p-3 rounded-2xl" />
-                          <IoMailOutline className="w-11 h-11 text-black dark:text-amber-50  bg-blue-100 dark:bg-gray-800 p-3 rounded-2xl" />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          viewport={{ once: true }}
+          className="relative text-center mb-14"
+        >
+          <h2 className="text-4xl lg:text-5xl font-black mb-4">
+            About <span className="text-blue-500">Me</span>
+          </h2>
 
-          {/* Right Side: Content */}
-          <div className="space-y-2 p-2  ">
-            <h3 className="text-xl font-bold text-blue-600">
-              Helping you build modern, high-performance web experiences.
+          <div className="w-24 h-1.5 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto rounded-full"></div>
+        </motion.div>
+
+        <div className="relative grid lg:grid-cols-2 gap-10 items-center">
+          {/* LEFT CARD */}
+          <motion.div
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mx-auto w-full max-w-md"
+          >
+            <div className="relative overflow-hidden rounded-[35px] border border-white/10 bg-white/70 dark:bg-[#0f172a]/80 backdrop-blur-2xl p-8 text-center shadow-2xl">
+              {/* Glow */}
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-blue-500/20 blur-3xl rounded-full"></div>
+
+              {/* Image */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.4 }}
+                className="relative w-[180px] h-[180px] mx-auto rounded-full overflow-hidden border-[6px] border-blue-100 dark:border-white/10 shadow-2xl"
+              >
+                <Image
+                  src="/man-2.png"
+                  fill
+                  alt="Sazid Hossain"
+                  priority
+                  className="object-cover"
+                />
+              </motion.div>
+
+              {/* Info */}
+              <div className="mt-6 space-y-3">
+                <h2 className="text-3xl font-bold">SAZID HOSSAIN</h2>
+
+                <p className="text-blue-500 text-lg font-medium">Full Stack Developer</p>
+
+                <p className="text-gray-500 dark:text-gray-400">Frontend Focused</p>
+
+                <p className="text-sm text-gray-500 dark:text-gray-400">sazidhossain25@gmail.com</p>
+              </div>
+
+              {/* Social Icons */}
+              <div className="flex items-center justify-center gap-4 mt-8">
+                <motion.div whileHover={{ y: -5, scale: 1.1 }}>
+                  <Link
+                    href="https://linkedin.com"
+                    target="_blank"
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-500 hover:text-white transition-all duration-300"
+                  >
+                    <FaLinkedinIn className="text-xl" />
+                  </Link>
+                </motion.div>
+
+                <motion.div whileHover={{ y: -5, scale: 1.1 }}>
+                  <Link
+                    href="https://github.com"
+                    target="_blank"
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-500 hover:text-white transition-all duration-300"
+                  >
+                    <AiFillGithub className="text-2xl" />
+                  </Link>
+                </motion.div>
+
+                <motion.div whileHover={{ y: -5, scale: 1.1 }}>
+                  <Link
+                    href="mailto:sazidhossain25@gmail.com"
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-500 hover:text-white transition-all duration-300"
+                  >
+                    <IoMailOutline className="text-2xl" />
+                  </Link>
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* RIGHT CONTENT */}
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <h3 className="text-2xl lg:text-3xl font-bold leading-snug">
+              Helping brands build modern & high-performance web experiences.
             </h3>
 
-            <p className="text-[14px] text-gray-600 dark:text-gray-300 leading-relaxed">
-              Hello! I'm{' '}
-              <span className="font-semibold text-black dark:text-white">Sazid Hossain</span>. My
-              journey into the world of programming started with a simple "Hello World" and a deep
-              curiosity for how things work on the internet. Over the years, this curiosity turned
-              into a passion for crafting clean, scalable, and user-centric frontend solutions.
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-[15px]">
+              Hello! I'm Sazid Hossain. I love building clean, interactive and high-performance
+              frontend applications.
             </p>
 
-            <p className="text-[14px] text-gray-600 dark:text-gray-300 leading-relaxed">
-              I truly enjoy the process of turning a complex problem into a simple, beautiful
-              interface. Using tools like <span className="text-blue-500 font-medium">Next.js</span>
-              ,<span className="text-blue-500 font-medium"> Tailwind CSS</span>, and
-              <span className="text-blue-500 font-medium"> Framer Motion</span>, I focus on creating
-              smooth user experiences that feel intuitive and fast.
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-[15px]">
+              My favorite stack includes Next.js, Tailwind CSS, TypeScript and Framer Motion.
             </p>
 
-            {/* Hobbies / Personal Interests */}
-            <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded-xl border-l-4 border-blue-600">
-              <h4 className="font-bold mb-1">Outside of Coding</h4>
-              <p className="text-gray-700 dark:text-gray-300 text-[10px">
-                When I'm not staring at a code editor, you can find me playing cricket, exploring
-                new tech gadgets, or traveling to find the best street food. I believe a healthy
-                balance between logic and creativity is what makes a great developer.
+            {/* Personal Box */}
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+              className="p-5 rounded-2xl bg-blue-50 dark:bg-blue-900/10 border border-blue-200/40 dark:border-blue-500/20"
+            >
+              <h4 className="font-bold mb-2 text-lg">Outside of Coding</h4>
+
+              <p className="text-gray-700 dark:text-gray-300 text-[14px] leading-relaxed">
+                I enjoy cricket, tech gadgets and exploring new ideas.
               </p>
-            </div>
-
-            {/* Quick Info Grid */}
-            <div className="grid grid-cols-2 gap-4 pt-4">
-              <div>
-                <p className="text-sm text-gray-500">Based in</p>
-                <p className="font-semibold">Dhaka, Bangladesh</p>
-              </div>
-              <div>
-                <p className="text-sm text-gray-500">Email</p>
-                <p className="font-semibold">sazidhossain25@gmail.com</p>
-              </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -7,12 +7,12 @@
 }
 
 :root {
-  --background: #FCF8F8;
+  --background: #e8eaf1;
   --foreground: #0D1A63;
 }
 
 .dark {
-  --background: #091413;
+  --background: #17173a;
   --foreground: #ffffff;
 }
 
