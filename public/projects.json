@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Tech Elevate",
+    "description": "A premium technology platform designed for advanced learning and professional growth.",
+    "image": "/man1.png",
+    "tags": ["REACT", "TAILWIND", "DAISY UI", "VERCEL"],
+    "links": {
+      "github": "https://github.com/your-username/tech-elevate",
+      "live": "https://your-live-site.com"
+    }
+  },
+  {
+    "id": 2,
+    "title": "GitHub Issues Tracker",
+    "description": "A clean, responsive dashboard to manage GitHub issues with live API integration, filtering, and detailed modals.",
+    "image": "/man1.png",
+    "tags": ["JAVASCRIPT", "TAILWIND", "LUCIDE ICONS", "API"],
+    "links": {
+      "github": "https://github.com/your-username/github-tracker",
+      "live": "https://your-live-site.com"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Elite Commerce",
+    "description": "A modern e-commerce solution with advanced filtering, cart management, and seamless checkout experience.",
+    "image": "/man1.png",
+    "tags": ["NEXT.JS", "REDUX", "STRIPE", "NODE.JS"],
+    "links": {
+      "github": "https://github.com/your-username/elite-commerce",
+      "live": "https://your-live-site.com"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Ai Chat Assistant",
+    "description": "Intelligent chatbot powered by Gemini API, featuring real-time responses and markdown support.",
+    "image": "/man1.png",
+    "tags": ["TYPESCRIPT", "GEMINI API", "FRAMER MOTION", "CSS"],
+    "links": {
+      "github": "https://keenkeeper-eight-wine.vercel.app/",
+      "live": "https://keenkeeper-eight-wine.vercel.app/"
+    }
+  }
+]
