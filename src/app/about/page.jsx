@@ -48,11 +48,17 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="mx-auto w-full max-w-md"
           >
+<<<<<<< HEAD
             <div className="relative overflow-hidden rounded-[35px] dark:bg-[#0f172a]/2 backdrop-blur-2xl p-8 text-center ">
               {/* Glow */}
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-blue-500/10 blur-3xl rounded-full"></div>
               {/* Glow */}
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-blue-500/10 blur-3xl rounded-full"></div>
+=======
+            <div className="relative overflow-hidden rounded-[35px] border border-white/10 bg-white/10 dark:bg-[#0f172a]/10 backdrop-blur-2xl p-8 text-center shadow-2xl">
+              {/* Glow */}
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-blue-500/10 blur-3xl rounded-full"></div>
+>>>>>>> 1746febf66d487d1539015f97304546c50abba6a
 
               {/* Image */}
               <motion.div
@@ -84,7 +90,11 @@ const AboutPage = () => {
               <div className="flex items-center justify-center gap-4 mt-8">
                 <motion.div whileHover={{ y: -5, scale: 1.1 }}>
                   <Link
+<<<<<<< HEAD
                     href="https://www.linkedin.com/in/sazid-hossain25/"
+=======
+                    href="https://linkedin.com"
+>>>>>>> 1746febf66d487d1539015f97304546c50abba6a
                     target="_blank"
                     className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/20 hover:opacity-100 transition-all duration-500 hover:text-white  "
                   >
@@ -94,7 +104,11 @@ const AboutPage = () => {
 
                 <motion.div whileHover={{ y: -5, scale: 1.1 }}>
                   <Link
+<<<<<<< HEAD
                     href="https://github.com/sazidhossainfahim25"
+=======
+                    href="https://github.com"
+>>>>>>> 1746febf66d487d1539015f97304546c50abba6a
                     target="_blank"
                     className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-500 hover:text-white transition-all duration-300"
                   >

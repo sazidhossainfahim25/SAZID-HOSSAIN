@@ -33,13 +33,21 @@ const contactInfo = [
 const socials = [
   {
     icon: <FaGithub />,
+<<<<<<< HEAD
     link: 'https://github.com/sazidhossainfahim25',
+=======
+    link: 'https://github.com',
+>>>>>>> 1746febf66d487d1539015f97304546c50abba6a
     hover: 'hover:bg-black hover:text-white',
   },
 
   {
     icon: <FaLinkedin />,
+<<<<<<< HEAD
     link: 'https://www.linkedin.com/in/sazid-hossain25/',
+=======
+    link: 'https://linkedin.com',
+>>>>>>> 1746febf66d487d1539015f97304546c50abba6a
     hover: 'hover:bg-blue-600 hover:text-white',
   },
 
@@ -200,7 +208,11 @@ const ContactPage = () => {
 
                     <input
                       type="text"
+<<<<<<< HEAD
                       placeholder="Your Name"
+=======
+                      placeholder="John Doe"
+>>>>>>> 1746febf66d487d1539015f97304546c50abba6a
                       className="w-full rounded-2xl border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-[#0f172a]/80 px-6 py-4 text-gray-800 dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all duration-300"
                     />
                   </div>
@@ -213,7 +225,11 @@ const ContactPage = () => {
 
                     <input
                       type="email"
+<<<<<<< HEAD
                       placeholder="Enter your Email"
+=======
+                      placeholder="john@example.com"
+>>>>>>> 1746febf66d487d1539015f97304546c50abba6a
                       className="w-full rounded-2xl border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-[#0f172a]/80 px-6 py-4 text-gray-800 dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all duration-300"
                     />
                   </div>
@@ -227,7 +243,11 @@ const ContactPage = () => {
 
                   <input
                     type="text"
+<<<<<<< HEAD
                     placeholder="Text"
+=======
+                    placeholder="Project Discussion"
+>>>>>>> 1746febf66d487d1539015f97304546c50abba6a
                     className="w-full rounded-2xl border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-[#0f172a]/80 px-6 py-4 text-gray-800 dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all duration-300"
                   />
                 </div>
@@ -240,7 +260,11 @@ const ContactPage = () => {
 
                   <textarea
                     rows="6"
+<<<<<<< HEAD
                     placeholder="Tell me about your project"
+=======
+                    placeholder="Tell me about your project..."
+>>>>>>> 1746febf66d487d1539015f97304546c50abba6a
                     className="w-full resize-none rounded-2xl border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-[#0f172a]/80 px-6 py-4 text-gray-800 dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all duration-300"
                   ></textarea>
                 </div>
