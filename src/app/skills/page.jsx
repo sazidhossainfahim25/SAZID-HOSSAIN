@@ -75,15 +75,7 @@ const skillCategories = [
         name: 'MongoDB',
         category: 'Database',
         icon: <SiMongodb className="text-[#47A248]" />,
-      },
-      {
-        name: 'express js',
-        category: 'Backend',
-        icon: <SiExpress className="text-[#4479A1]" />,
-        name: 'MySQL',
-        category: 'Database',
-        icon: <SiMysql className="text-[#4479A1]" />,
-      },
+      }
     ],
   },
 
@@ -99,12 +91,7 @@ const skillCategories = [
         name: 'Figma',
         category: 'Design',
         icon: <FaFigma className="text-[#F24E1E]" />,
-      },
-      {
-        name: 'Postman',
-        category: 'Testing',
-        icon: <SiPostman className="text-[#FF6C37]" />,
-      },
+      }
     ],
   },
 ];
