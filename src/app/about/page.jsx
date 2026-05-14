@@ -48,17 +48,10 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="mx-auto w-full max-w-md"
           >
-<<<<<<< HEAD
-            <div className="relative overflow-hidden rounded-[35px] dark:bg-[#0f172a]/2 backdrop-blur-2xl p-8 text-center ">
-              {/* Glow */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-blue-500/10 blur-3xl rounded-full"></div>
-              {/* Glow */}
-              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-blue-500/10 blur-3xl rounded-full"></div>
-=======
             <div className="relative overflow-hidden rounded-[35px] border border-white/10 bg-white/10 dark:bg-[#0f172a]/10 backdrop-blur-2xl p-8 text-center shadow-2xl">
               {/* Glow */}
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-blue-500/10 blur-3xl rounded-full"></div>
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
+              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-blue-500/10 blur-3xl rounded-full"></div>
 
               {/* Image */}
               <motion.div
@@ -88,42 +81,28 @@ const AboutPage = () => {
 
               {/* Social Icons */}
               <div className="flex items-center justify-center gap-4 mt-8">
-                <motion.div whileHover={{ y: -5, scale: 1.1 }}>
-                  <Link
-<<<<<<< HEAD
-                    href="https://www.linkedin.com/in/sazid-hossain25/"
-=======
-                    href="https://linkedin.com"
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
-                    target="_blank"
-                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/20 hover:opacity-100 transition-all duration-500 hover:text-white  "
-                  >
-                    <FaLinkedinIn className="text-xl" />
-                  </Link>
-                </motion.div>
+                <Link
+                  href="https://www.linkedin.com/in/sazid-hossain25/"
+                  target="_blank"
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/20 hover:text-white transition-all duration-300"
+                >
+                  <FaLinkedinIn className="text-xl" />
+                </Link>
 
-                <motion.div whileHover={{ y: -5, scale: 1.1 }}>
-                  <Link
-<<<<<<< HEAD
-                    href="https://github.com/sazidhossainfahim25"
-=======
-                    href="https://github.com"
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
-                    target="_blank"
-                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-500 hover:text-white transition-all duration-300"
-                  >
-                    <AiFillGithub className="text-2xl" />
-                  </Link>
-                </motion.div>
+                <Link
+                  href="https://github.com/sazidhossainfahim25"
+                  target="_blank"
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-500 hover:text-white transition-all duration-300"
+                >
+                  <AiFillGithub className="text-2xl" />
+                </Link>
 
-                <motion.div whileHover={{ y: -5, scale: 1.1 }}>
-                  <Link
-                    href="mailto:sazidhossain25@gmail.com"
-                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-500 hover:text-white transition-all duration-300"
-                  >
-                    <IoMailOutline className="text-2xl" />
-                  </Link>
-                </motion.div>
+                <Link
+                  href="mailto:sazidhossain25@gmail.com"
+                  className="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 dark:bg-white/10 hover:bg-blue-500 hover:text-white transition-all duration-300"
+                >
+                  <IoMailOutline className="text-2xl" />
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -136,31 +115,32 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-2xl lg:text-3xl font-bold leading-snug">
-              Helping brands build modern & high-performance web experiences.
+            <h3 className="text-xl lg:text-xl font-samibold leading-snug">
+              Building fast, beautiful & responsive frontend experiences.
             </h3>
 
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-[15px]">
-              Hello! I'm Sazid Hossain. I love building clean, interactive and high-performance
-              frontend applications.
+              Hello! I'm Sazid Hossain. I'm a Frontend-Focused Full Stack Developer from Dhaka,
+              Bangladesh. I love crafting clean, interactive, and visually stunning web interfaces
+              that users enjoy.
             </p>
 
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-[15px]">
-              My favorite stack includes Next.js, Tailwind CSS, TypeScript and Framer Motion.
+              My favorite stack includes Next.js, React, Tailwind CSS, and TypeScript — always
+              focused on pixel-perfect design, smooth performance, and great user experience.
             </p>
 
-            {/* Personal Box */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
               className="p-5 rounded-2xl bg-blue-50 dark:bg-blue-900/10 border border-blue-200/40 dark:border-blue-500/20"
             >
               <h4 className="font-bold mb-2 text-lg">Outside of Coding</h4>
-
-              <p className="text-gray-700 dark:text-gray-300 text-[14px] leading-relaxed">
-                I enjoy cricket, tech gadgets and exploring new ideas.
+              <p className="text-gray-700 dark:text-gray-300 text-[14px]">
+                I enjoy cricket, tech gadgets, and exploring new ideas in the world of frontend
+                development.
               </p>
             </motion.div>
+            <p>Contact: sazidhossain25@gmail.com</p>
           </motion.div>
         </div>
       </motion.div>

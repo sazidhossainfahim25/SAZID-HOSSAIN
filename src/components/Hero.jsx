@@ -3,11 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
-<<<<<<< HEAD
 import { motion } from 'framer-motion'; 
-=======
-import { motion } from 'framer-motion'; // ফ্রেমার মোশন ইমপোর্ট
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
 import { Typewriter } from 'react-simple-typewriter';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -35,10 +31,6 @@ const Hero = () => {
   return (
     <section className=" pt-24 ">
       <div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -128,10 +120,6 @@ const Hero = () => {
 
           {/* RIGHT SIDE (Profile Card) */}
           <motion.div variants={fadeInUp} className="relative mx-auto w-full max-w-sm">
-<<<<<<< HEAD
-=======
-
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
             <motion.div
               whileHover={{ y: -10 }}
               className="relative text-center rounded-[35px]  bg-white/5 dark:bg-[#0f172a]/5  p-4 "
@@ -149,13 +137,8 @@ const Hero = () => {
               {/* Social Icons */}
               <div className="flex items-center justify-center gap-4 mt-8">
                 {[
-<<<<<<< HEAD
                   { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/in/sazid-hossain25/' },
                   { icon: <AiFillGithub />, href: 'https://github.com/sazidhossainfahim25' },
-=======
-                  { icon: <FaLinkedinIn />, href: 'https://linkedin.com' },
-                  { icon: <AiFillGithub />, href: 'https://github.com' },
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
                   { icon: <IoMailOutline />, href: 'mailto:sazidhossain25@gmail.com' },
                 ].map((social, i) => (
                   <Link key={i} href={social.href} target="_blank">

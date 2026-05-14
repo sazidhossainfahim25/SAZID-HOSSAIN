@@ -9,21 +9,12 @@ import {
   FaJs,
   FaReact,
   FaNodeJs,
-<<<<<<< HEAD
   FaGithub,
   FaFigma,
   FaBootstrap,
 } from 'react-icons/fa';
 
 import { SiNextdotjs, SiMongodb, SiMysql, SiTailwindcss, SiPostman, SiExpress, SiHeroui } from 'react-icons/si';
-=======
-  FaLaravel,
-  FaGithub,
-  FaFigma,
-} from 'react-icons/fa';
-
-import { SiNextdotjs, SiMongodb, SiMysql, SiTailwindcss, SiPostman } from 'react-icons/si';
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
 
 const skillCategories = [
   {
@@ -40,14 +31,11 @@ const skillCategories = [
         icon: <FaCss3Alt className="text-[#1572B6]" />,
       },
       {
-<<<<<<< HEAD
         name: 'Hero UI',
         category: 'Frontend',
         icon: <SiHeroui className="text-[#1572B6]" />,
       },
       {
-=======
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
         name: 'JavaScript',
         category: 'Frontend',
         icon: <FaJs className="text-[#F7DF1E]" />,
@@ -67,14 +55,11 @@ const skillCategories = [
         category: 'Frontend',
         icon: <SiTailwindcss className="text-[#38BDF8]" />,
       },
-<<<<<<< HEAD
       {
         name: 'Bootstrap',
         category: 'Frontend',
         icon: <FaBootstrap className="text-[#38BDF8]" />,
       },
-=======
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
     ],
   },
 
@@ -86,30 +71,18 @@ const skillCategories = [
         category: 'Backend',
         icon: <FaNodeJs className="text-[#339933]" />,
       },
-<<<<<<< HEAD
-
-=======
-      {
-        name: 'Laravel',
-        category: 'Backend',
-        icon: <FaLaravel className="text-[#FF2D20]" />,
-      },
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
       {
         name: 'MongoDB',
         category: 'Database',
         icon: <SiMongodb className="text-[#47A248]" />,
       },
       {
-<<<<<<< HEAD
         name: 'express js',
         category: 'Backend',
         icon: <SiExpress className="text-[#4479A1]" />,
-=======
         name: 'MySQL',
         category: 'Database',
         icon: <SiMysql className="text-[#4479A1]" />,
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
       },
     ],
   },
@@ -127,14 +100,11 @@ const skillCategories = [
         category: 'Design',
         icon: <FaFigma className="text-[#F24E1E]" />,
       },
-<<<<<<< HEAD
-=======
       {
         name: 'Postman',
         category: 'Testing',
         icon: <SiPostman className="text-[#FF6C37]" />,
       },
->>>>>>> 1746febf66d487d1539015f97304546c50abba6a
     ],
   },
 ];
