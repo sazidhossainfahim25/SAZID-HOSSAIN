@@ -9,6 +9,70 @@
       "github": "https://github.com/sazidhossainfahim25/keenkeeper",
       "live": "https://keenkeeper-eight-wine.vercel.app/"
     }
+  },
+{
+  "id": 1,
+  "title": "Tiles Gallery",
+  "description": "Tiles Gallery is a modern and responsive web application where users can explore a wide collection of stylish tile designs. Users can search tiles, view detailed information, and manage their profiles with secure authentication. The platform provides a smooth browsing experience with animations, protected routes, and a clean user interface built using modern web technologies.",
+  "image": "/tiles.png",
+  "tags": [
+    "Next.js",
+    "React.js",
+    "Tailwind CSS",
+    "DaisyUI",
+    "MongoDB",
+    "BetterAuth",
+    "SwiperJS",
+    "Animate.css",
+    "Vercel"
+  ],
+  "links": {
+    "github": "https://github.com/sazidhossainfahim25/TilesGallery",
+    "live": "https://tiles-gallery-beryl.vercel.app/"
   }
+},
+{
+  "id": 2,
+  "title": "DigiTools",
+  "description": "DigiTools is a modern digital tools marketplace where users can explore premium digital products, add them to cart, and complete purchases with a smooth and responsive user experience. The project focuses on clean UI design, real-time cart functionality, and interactive notifications for better usability.",
+  "image": "/digi.png",
+  "tags": ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS", "DaisyUI", "React Toastify"],
+  "links": {
+    "github": "https://github.com/sazidhossainfahim25/DigiTools",
+    "live": "https://digi-tools-six.vercel.app/"
+  }
+},{
+  "id": 3,
+  "title": "GitHub Issues Tracker",
+  "description": "GitHub Issues Tracker is a modern web application that helps developers manage and track GitHub issues efficiently. Users can explore repositories, monitor issue status, filter and search issues, and improve workflow management through a clean and responsive interface.",
+  "image": "/github.png",
+  "tags": [
+    "JavaScript",
+    "Tailwind CSS",
+    "DaisyUI",
+    "React Toastify",
+    "Responsive Design"
+  ],
+  "links": {
+    "github": "https://github.com/sazidhossainfahim25/GitHub-Issues-Tracker",
+    "live": "https://git-hub-issues-tracker-omega.vercel.app/"
+  }
+},{
+  "id": 4,
+  "title": "Job Application Tracker",
+  "description": "Job Application Tracker is a modern web application designed to help users organize and manage their job search process efficiently. Users can track job applications, monitor application status, manage company details, and streamline their career journey through a clean and responsive interface.",
+  "image": "/job.png",
+  "tags": [
+    "html",
+    "JavaScript",
+    "Tailwind CSS",
+    "DaisyUI",
+    "Responsive Design"
+  ],
+  "links": {
+    "github": "https://github.com/sazidhossainfahim25/Job-Application-Tracker",
+    "live": "https://job-application-tracker-six-orpin.vercel.app/"
+  }
+}
   
 ]

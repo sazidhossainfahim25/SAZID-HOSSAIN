@@ -26,8 +26,10 @@ const ProjectsPage = () => {
     );
 
   return (
-    <section id="projects" className="relative p-4 mt-20 border-blue-950/20 rounded-2xl  border overflow-hidden">
-
+    <section
+      id="projects"
+      className="relative p-4 mt-20 border-blue-950/20 rounded-2xl  border overflow-hidden"
+    >
       <div className=" relative ">
         <div className="text-center">
           <motion.div
@@ -67,15 +69,15 @@ const ProjectsPage = () => {
                   </h3>
                   <div className="flex gap-4">
                     {/* External Link-er jonno <a> tag best */}
-                    <a
+                    <button
                       href={project.links?.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-100/30 hover:text-white transition-colors"
+                      className=" hover:text-blue-500 transition-colors flex justify-center items-center gap-1 border py-1 px-3 rounded-2xl border-white/10 text-amber-50 "
                       onClick={(e) => project.links?.github === '#' && e.preventDefault()}
                     >
-                      <FaGithub size={18} />
-                    </a>
+                      <FaGithub size={18} /> github
+                    </button>
                   </div>
                 </div>
 
@@ -85,10 +87,10 @@ const ProjectsPage = () => {
 
                 <div className="mt-auto flex items-center justify-between">
                   <div className="flex flex-wrap gap-2">
-                    {project.tags?.slice(0, 2).map((tag, i) => (
+                    {project.tags?.map((tag, i) => (
                       <span
                         key={i}
-                        className="text-[10px] text-blue-400 font-bold font-mono border border-blue-400/20 px-3 py-1 rounded-full bg-blue-400/5 uppercase"
+                        className="text-[6px] text-white font-bold font-mono border border-blue-400/20 px-3 py-1 rounded-full bg-blue-400/2 uppercase"
                       >
                         {tag}
                       </span>
@@ -96,15 +98,15 @@ const ProjectsPage = () => {
                   </div>
 
                   {/* External Link-er jonno <a> tag best */}
-                  <a
+                  <button
                     href={project.links?.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-xs font-black text-white uppercase tracking-tighter group-hover:text-blue-400 transition-all cursor-pointer"
+                    className="flex items-center gap-2 text-xs font-black text-white uppercase tracking-tighter group-hover:text-blue-400 transition-all cursor-pointer border py-2 px-3 rounded-2xl border-white/10"
                     onClick={(e) => project.links?.live === '#' && e.preventDefault()}
                   >
                     Live <FaExternalLinkAlt size={10} />
-                  </a>
+                  </button>
                 </div>
               </div>
             </motion.div>
