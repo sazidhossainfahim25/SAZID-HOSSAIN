@@ -95,7 +95,7 @@ const ContactPage = () => {
         </motion.div>
 
         {/* Main Grid */}
-        <div className="grid lg:grid-cols-3 gap-10">
+        <div className="grid lg:grid-cols-3 gap-5">
           {/* LEFT SIDE */}
           <motion.div
             initial="hidden"
@@ -185,13 +185,13 @@ const ContactPage = () => {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <div className="relative overflow-hidden rounded-[40px] border border-black/5 dark:border-white/10 bg-white/60 dark:bg-white/5 backdrop-blur-2xl p-8 md:p-10 shadow-2xl">
+            <div className="relative overflow-hidden rounded-[40px] border border-black/5 dark:border-white/10 bg-white/60 dark:bg-white/5 backdrop-blur-2xl p-4 md:p-10 shadow-2xl">
               {/* Glow */}
               <div className="absolute top-0 right-0 w-72 h-72 bg-blue-500/10 blur-[120px] rounded-full"></div>
 
               {/* Form */}
               <form className="relative">
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
                   {/* Name */}
                   <div className="space-y-3">
                     <label className="text-sm font-medium text-gray-600 dark:text-gray-400 ml-2">
@@ -201,7 +201,7 @@ const ContactPage = () => {
                     <input
                       type="text"
                       placeholder="Your Name"
-                      className="w-full rounded-2xl border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-[#0f172a]/80 px-6 py-4 text-gray-800 dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all duration-300"
+                      className="w-full rounded-2xl border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-[#0f172a]/80 px-4 py-4 text-gray-800 dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all duration-300"
                     />
                   </div>
 
@@ -228,7 +228,7 @@ const ContactPage = () => {
                   <input
                     type="text"
                     placeholder="Text"
-                    className="w-full rounded-2xl border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-[#0f172a]/80 px-6 py-4 text-gray-800 dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all duration-300"
+                    className="w-full rounded-2xl border border-black/5 dark:border-white/10 bg-gray-50 dark:bg-[#0f172a]/80 px-4 py-4 text-gray-800 dark:text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all duration-300"
                   />
                 </div>
 
@@ -254,7 +254,7 @@ const ContactPage = () => {
                     scale: 0.98,
                   }}
                   type="submit"
-                  className="group w-full rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 py-5 font-bold text-white shadow-2xl shadow-blue-500/20 transition-all duration-300"
+                  className="group w-full rounded-2xl bg-blue-700 py-5 font-bold text-white shadow-2xl shadow-blue-500/20 transition-all duration-300"
                 >
                   <span className="flex items-center justify-center gap-3 text-lg">
                     Send Message
