@@ -119,14 +119,14 @@ const Hero = () => {
           </div>
 
           {/* RIGHT SIDE (Profile Card) */}
-          <motion.div variants={fadeInUp} className="relative mx-auto w-full max-w-sm">
+          {/* <motion.div variants={fadeInUp} className="relative mx-auto w-full max-w-sm">
             <motion.div
               whileHover={{ y: -10 }}
               className="relative text-center rounded-[35px]  bg-white/5 dark:bg-[#0f172a]/5  p-4 "
             >
               <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden border-[6px] border-blue-100 dark:border-white/10 mx-auto shadow-2xl mb-6">
                 {/* <Image src="/man-2.png" fill alt="Sazid" priority className="object-cover" /> */}
-              </div>
+              {/* /* {/* </div>
 
               <div className="space-y-2">
                 <h2 className="text-2xl font-bold uppercase tracking-tight">Sazid Hossain</h2>
@@ -135,7 +135,7 @@ const Hero = () => {
               </div>
 
               {/* Social Icons */}
-              <div className="flex items-center justify-center gap-4 mt-8">
+              {/* <div className="flex items-center justify-center gap-4 mt-8">
                 {[
                   { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/in/sazid-hossain25/' },
                   { icon: <AiFillGithub />, href: 'https://github.com/sazidhossainfahim25' },
@@ -152,9 +152,9 @@ const Hero = () => {
                 ))}
               </div>
             </motion.div>
-          </motion.div>
-        </motion.div>
-      </div>
+      //     </motion.div>
+      //   </motion.div> */}
+      // </div> */} */} */ */}
     </section>
   );
 };
