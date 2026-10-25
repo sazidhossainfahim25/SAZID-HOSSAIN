@@ -125,7 +125,7 @@ const Hero = () => {
               className="relative text-center rounded-[35px]  bg-white/5 dark:bg-[#0f172a]/5  p-4 "
             >
               <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden border-[6px] border-blue-100 dark:border-white/10 mx-auto shadow-2xl mb-6">
-                <Image src="/man-2.png" fill alt="Sazid" priority className="object-cover" />
+                {/* <Image src="/man-2.png" fill alt="Sazid" priority className="object-cover" /> */}
               </div>
 
               <div className="space-y-2">
