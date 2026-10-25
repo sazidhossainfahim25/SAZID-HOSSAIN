@@ -118,43 +118,6 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          {/* RIGHT SIDE (Profile Card) */}
-          {/* <motion.div variants={fadeInUp} className="relative mx-auto w-full max-w-sm">
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="relative text-center rounded-[35px]  bg-white/5 dark:bg-[#0f172a]/5  p-4 "
-            >
-              <div className="relative w-[180px] h-[180px] rounded-full overflow-hidden border-[6px] border-blue-100 dark:border-white/10 mx-auto shadow-2xl mb-6">
-                {/* <Image src="/man-2.png" fill alt="Sazid" priority className="object-cover" /> */}
-              {/* /* {/* </div>
-
-              <div className="space-y-2">
-                <h2 className="text-2xl font-bold uppercase tracking-tight">Sazid Hossain</h2>
-                <p className="text-blue-500 font-medium">Full Stack Developer</p>
-                <p className="text-gray-500 dark:text-gray-400 text-xs">sazidhossain25@gmail.com</p>
-              </div>
-
-              {/* Social Icons */}
-              {/* <div className="flex items-center justify-center gap-4 mt-8">
-                {[
-                  { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/in/sazid-hossain25/' },
-                  { icon: <AiFillGithub />, href: 'https://github.com/sazidhossainfahim25' },
-                  { icon: <IoMailOutline />, href: 'mailto:sazidhossain25@gmail.com' },
-                ].map((social, i) => (
-                  <Link key={i} href={social.href} target="_blank">
-                    <motion.div
-                      whileHover={{ scale: 1 }}
-                      className="w-11 h-11 rounded-xl flex items-center justify-center bg-blue-800 dark:bg-white/10 hover:bg-blue-600 text-white  hover:text-white transition-all cursor-pointer"
-                    >
-                      {social.icon}
-                    </motion.div>
-                  </Link>
-                ))}
-              </div>
-            </motion.div>
-      //     </motion.div>
-      //   </motion.div> */}
-      // </div> */} */} */ */}
     </section>
   );
 };
